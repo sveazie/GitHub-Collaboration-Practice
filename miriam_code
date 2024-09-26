@@ -1,0 +1,39 @@
+Last login: Thu Sep 26 15:00:27 on ttys000
+mdombrowski@Miriams-MBP ~ % git clone https://github.com/sveazie/GitHub-Collaboration-Practice.git
+fatal: destination path 'GitHub-Collaboration-Practice' already exists and is not an empty directory.
+mdombrowski@Miriams-MBP ~ % pwd
+/Users/mdombrowski
+mdombrowski@Miriams-MBP ~ % cd GitHub-Collaboration-Practice
+mdombrowski@Miriams-MBP GitHub-Collaboration-Practice % pwd
+/Users/mdombrowski/GitHub-Collaboration-Practice
+mdombrowski@Miriams-MBP GitHub-Collaboration-Practice % git checkout -b miriam_branch
+
+Switched to a new branch 'miriam_branch'
+mdombrowski@Miriams-MBP GitHub-Collaboration-Practice % git fetch origin
+
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 4 (delta 0), reused 3 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (4/4), done.
+From https://github.com/sveazie/GitHub-Collaboration-Practice
+ * [new branch]      esse_branch -> origin/esse_branch
+   08234d9..ed57b35  main        -> origin/main
+ * [new branch]      sep26-steph -> origin/sep26-steph
+mdombrowski@Miriams-MBP GitHub-Collaboration-Practice % git merge origin/main
+
+Updating 08234d9..ed57b35
+Fast-forward
+ group_project_file.txt | 1 +
+ 1 file changed, 1 insertion(+)
+mdombrowski@Miriams-MBP GitHub-Collaboration-Practice % nano group_project_file.txt
+mdombrowski@Miriams-MBP GitHub-Collaboration-Practice % git push --set-upstream origin miriam_branch
+Total 0 (delta 0), reused 0 (delta 0)
+remote: 
+remote: Create a pull request for 'miriam_branch' on GitHub by visiting:
+remote:      https://github.com/sveazie/GitHub-Collaboration-Practice/pull/new/miriam_branch
+remote: 
+To https://github.com/sveazie/GitHub-Collaboration-Practice.git
+ * [new branch]      miriam_branch -> miriam_branch
+Branch 'miriam_branch' set up to track remote branch 'miriam_branch' from 'origin'.
+mdombrowski@Miriams-MBP GitHub-Collaboration-Practice % ;  
