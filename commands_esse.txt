@@ -1,0 +1,134 @@
+essen@SphereduEssenam MINGW64 ~/git
+$ git clone https://github.com/sveazie/GitHub-Collaboration-Practice.git
+Cloning into 'GitHub-Collaboration-Practice'...
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 5 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (5/5), done.
+
+essen@SphereduEssenam MINGW64 ~/git
+$ git checkout -b esse_branch
+fatal: not a git repository (or any of the parent directories): .git
+
+essen@SphereduEssenam MINGW64 ~/git
+$ ls
+Computational-Social-Science-Projects/          essenam.github.io/
+Computational-Social-Science-Training-Program/  git_challenge_2/
+GitHub-Collaboration-Practice/                  repo_for_CSS_2024_class/
+README.md
+
+essen@SphereduEssenam MINGW64 ~/git
+$ cd GitHub-Collaboration-Practice/
+
+essen@SphereduEssenam MINGW64 ~/git/GitHub-Collaboration-Practice (main)
+$ git checkout -b esse_branch
+Switched to a new branch 'esse_branch'
+
+essen@SphereduEssenam MINGW64 ~/git/GitHub-Collaboration-Practice (esse_b
+$ git status
+On branch esse_branch
+nothing to commit, working tree clean
+
+essen@SphereduEssenam MINGW64 ~/git/GitHub-Collaboration-Practice (esse_b
+$ git push --set-upstream origin esse_branch
+fatal: unable to connect to cache daemon: Unknown error
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'esse_branch' on GitHub by visiting:
+remote:      https://github.com/sveazie/GitHub-Collaboration-Practice/pulsse_branch
+remote:
+To https://github.com/sveazie/GitHub-Collaboration-Practice.git
+ * [new branch]      esse_branch -> esse_branch
+branch 'esse_branch' set up to track 'origin/esse_branch'.
+
+essen@SphereduEssenam MINGW64 ~/git/GitHub-Collaboration-Practice (esse_b
+$ git pull origin main
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 4 (delta 0), reused 3 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (4/4), 1.17 KiB | 17.00 KiB/s, done.
+From https://github.com/sveazie/GitHub-Collaboration-Practice
+ * branch            main       -> FETCH_HEAD
+   08234d9..ed57b35  main       -> origin/main
+Updating 08234d9..ed57b35
+Fast-forward
+ group_project_file.txt | 1 +
+ 1 file changed, 1 insertion(+)
+
+essen@SphereduEssenam MINGW64 ~/git/GitHub-Collaboration-Practice (esse_b
+$ ls
+group_project_file.txt
+
+essen@SphereduEssenam MINGW64 ~/git/GitHub-Collaboration-Practice (esse_b
+$ nano group_project_file.txt
+
+essen@SphereduEssenam MINGW64 ~/git/GitHub-Collaboration-Practice (esse_b
+$ git add group_project_file.txt
+
+essen@SphereduEssenam MINGW64 ~/git/GitHub-Collaboration-Practice (esse_b
+$ git commit -m "trying to merge"
+On branch esse_branch
+Your branch is ahead of 'origin/esse_branch' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+essen@SphereduEssenam MINGW64 ~/git/GitHub-Collaboration-Practice (esse_b
+$ git push
+fatal: unable to connect to cache daemon: Unknown error
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/sveazie/GitHub-Collaboration-Practice.git
+   08234d9..ed57b35  esse_branch -> esse_branch
+
+essen@SphereduEssenam MINGW64 ~/git/GitHub-Collaboration-Practice (esse_b
+$ ^C
+
+
+essen@SphereduEssenam MINGW64 ~/git/GitHub-Collaboration-Practice (esse_branch)
+$ git pull origin main
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 4 (delta 0), reused 3 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (4/4), 1.21 KiB | 18.00 KiB/s, done.
+From https://github.com/sveazie/GitHub-Collaboration-Practice
+ * branch            main       -> FETCH_HEAD
+   ed57b35..c5e5653  main       -> origin/main
+Updating ed57b35..c5e5653
+Fast-forward
+ group_project_file.txt | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+essen@SphereduEssenam MINGW64 ~/git/GitHub-Collaboration-Practice (esse_branch)
+$ ls
+group_project_file.txt
+
+essen@SphereduEssenam MINGW64 ~/git/GitHub-Collaboration-Practice (esse_branch)
+$ nano group_project_file.txt
+
+essen@SphereduEssenam MINGW64 ~/git/GitHub-Collaboration-Practice (esse_branch)
+$ git add group_project_file.txt
+
+essen@SphereduEssenam MINGW64 ~/git/GitHub-Collaboration-Practice (esse_branch)
+$ git commit -m "Added my interests"
+[esse_branch b3d49ec] Added my interests
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+essen@SphereduEssenam MINGW64 ~/git/GitHub-Collaboration-Practice (esse_branch)
+$ git push
+fatal: unable to connect to cache daemon: Unknown error
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 423 bytes | 141.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/sveazie/GitHub-Collaboration-Practice.git
+   ed57b35..b3d49ec  esse_branch -> esse_branch
+
+essen@SphereduEssenam MINGW64 ~/git/GitHub-Collaboration-Practice (esse_branch)
+$ git push origin esse_branch
+fatal: unable to connect to cache daemon: Unknown error
+Everything up-to-date
