@@ -1,0 +1,16 @@
+larissacursaro@Larissas-MacBook-Pro ~ % git clone https://github.com/sveazie/GitHub-Collaboration-Practice.git
+larissacursaro@Larissas-MacBook-Pro ~ % cd GitHub-Collaboration-Practice
+larissacursaro@Larissas-MacBook-Pro GitHub-Collaboration-Practice % git checkout larissa_branch 
+larissacursaro@Larissas-MacBook-Pro GitHub-Collaboration-Practice % nano group_project_file.txt
+larissacursaro@Larissas-MacBook-Pro GitHub-Collaboration-Practice % git commit -m "I added my research interest"   
+[larissa_branch d791bdb] I added my research interest git push
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+larissacursaro@Larissas-MacBook-Pro GitHub-Collaboration-Practice % git push 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 374 bytes | 374.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/sveazie/GitHub-Collaboration-Practice.git
+   08234d9..d791bdb  larissa_branch -> larissa_branch
