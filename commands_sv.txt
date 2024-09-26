@@ -1,0 +1,179 @@
+Last login: Thu Sep 26 11:22:39 on ttys001
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+(base) StephaneazieAir:~ sveazie$ pwd
+/Users/sveazie
+(base) StephaneazieAir:~ sveazie$ cd git
+(base) StephaneazieAir:git sveazie$ pwd
+/Users/sveazie/git
+(base) StephaneazieAir:git sveazie$ git clone https://github.com/sveazie/GitHub-Collaboration-Practice.git
+Cloning into 'GitHub-Collaboration-Practice'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
+(base) StephaneazieAir:git sveazie$ git pull
+fatal: not a git repository (or any of the parent directories): .git
+(base) StephaneazieAir:git sveazie$ git status
+fatal: not a git repository (or any of the parent directories): .git
+(base) StephaneazieAir:git sveazie$ pwd
+/Users/sveazie/git
+(base) StephaneazieAir:git sveazie$ cd GitHub-Collaboration-Practice
+(base) StephaneazieAir:GitHub-Collaboration-Practice sveazie$ git pull
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 2 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (2/2), 918 bytes | 306.00 KiB/s, done.
+From https://github.com/sveazie/GitHub-Collaboration-Practice
+   ffc3257..08234d9  main       -> origin/main
+Updating ffc3257..08234d9
+Fast-forward
+ group_project_file => group_project_file.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename group_project_file => group_project_file.txt (100%)
+(base) StephaneazieAir:GitHub-Collaboration-Practice sveazie$ pwd
+/Users/sveazie/git/GitHub-Collaboration-Practice
+(base) StephaneazieAir:GitHub-Collaboration-Practice sveazie$ git checkout -b sep26-steph
+Switched to a new branch 'sep26-steph'
+(base) StephaneazieAir:GitHub-Collaboration-Practice sveazie$ git branch
+  main
+* sep26-steph
+(base) StephaneazieAir:GitHub-Collaboration-Practice sveazie$ git status
+On branch sep26-steph
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   group_project_file.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base) StephaneazieAir:GitHub-Collaboration-Practice sveazie$ git add .
+(base) StephaneazieAir:GitHub-Collaboration-Practice sveazie$ git commit -m "add research interests"
+[sep26-steph 969d885] add research interests
+ 1 file changed, 1 insertion(+)
+(base) StephaneazieAir:GitHub-Collaboration-Practice sveazie$ git push origin sep26-steph
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 317 bytes | 317.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'sep26-steph' on GitHub by visiting:
+remote:      https://github.com/sveazie/GitHub-Collaboration-Practice/pull/new/sep26-steph
+remote: 
+To https://github.com/sveazie/GitHub-Collaboration-Practice.git
+ * [new branch]      sep26-steph -> sep26-steph
+(base) StephaneazieAir:GitHub-Collaboration-Practice sveazie$ pwd
+/Users/sveazie/git/GitHub-Collaboration-Practice
+(base) StephaneazieAir:GitHub-Collaboration-Practice sveazie$ git pull
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (1/1), 912 bytes | 456.00 KiB/s, done.
+From https://github.com/sveazie/GitHub-Collaboration-Practice
+ * [new branch]      esse_branch -> origin/esse_branch
+   08234d9..ed57b35  main        -> origin/main
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> sep26-steph
+
+(base) StephaneazieAir:GitHub-Collaboration-Practice sveazie$ git branch
+  main
+* sep26-steph
+(base) StephaneazieAir:GitHub-Collaboration-Practice sveazie$ git checkout main
+Switched to branch 'main'
+Your branch is behind 'origin/main' by 2 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+(base) StephaneazieAir:GitHub-Collaboration-Practice sveazie$ git pull origin main
+From https://github.com/sveazie/GitHub-Collaboration-Practice
+ * branch            main       -> FETCH_HEAD
+Updating 08234d9..ed57b35
+Fast-forward
+ group_project_file.txt | 1 +
+ 1 file changed, 1 insertion(+)
+(base) StephaneazieAir:GitHub-Collaboration-Practice sveazie$ git checkout -b steph-2
+Switched to a new branch 'steph-2'
+(base) StephaneazieAir:GitHub-Collaboration-Practice sveazie$ git status
+On branch steph-2
+nothing to commit, working tree clean
+(base) StephaneazieAir:GitHub-Collaboration-Practice sveazie$ git branch
+  main
+  sep26-steph
+* steph-2
+(base) StephaneazieAir:GitHub-Collaboration-Practice sveazie$ git checkout -b sep26-steph
+fatal: a branch named 'sep26-steph' already exists
+(base) StephaneazieAir:GitHub-Collaboration-Practice sveazie$ git status
+On branch steph-2
+nothing to commit, working tree clean
+(base) StephaneazieAir:GitHub-Collaboration-Practice sveazie$ git fetch origin
+(base) StephaneazieAir:GitHub-Collaboration-Practice sveazie$ git branch
+  main
+  sep26-steph
+* steph-2
+(base) StephaneazieAir:GitHub-Collaboration-Practice sveazie$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+(base) StephaneazieAir:GitHub-Collaboration-Practice sveazie$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+(base) StephaneazieAir:GitHub-Collaboration-Practice sveazie$ git branch
+* main
+  sep26-steph
+  steph-2
+(base) StephaneazieAir:GitHub-Collaboration-Practice sveazie$ git checkout -b sep26-steph
+fatal: a branch named 'sep26-steph' already exists
+(base) StephaneazieAir:GitHub-Collaboration-Practice sveazie$ git checkout sep26-steph
+Switched to branch 'sep26-steph'
+(base) StephaneazieAir:GitHub-Collaboration-Practice sveazie$ git branch
+  main
+* sep26-steph
+  steph-2
+(base) StephaneazieAir:GitHub-Collaboration-Practice sveazie$ git fetch origin
+From https://github.com/sveazie/GitHub-Collaboration-Practice
+ * [new branch]      miriam_branch -> origin/miriam_branch
+(base) StephaneazieAir:GitHub-Collaboration-Practice sveazie$ git status
+On branch sep26-steph
+nothing to commit, working tree clean
+(base) StephaneazieAir:GitHub-Collaboration-Practice sveazie$ git status
+On branch sep26-steph
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   group_project_file.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base) StephaneazieAir:GitHub-Collaboration-Practice sveazie$ git add . 
+(base) StephaneazieAir:GitHub-Collaboration-Practice sveazie$ git commit -m "added Steph interests" 
+[sep26-steph 54951f7] added Steph interests
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+(base) StephaneazieAir:GitHub-Collaboration-Practice sveazie$ git push origin
+fatal: The current branch sep26-steph has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin sep26-steph
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+(base) StephaneazieAir:GitHub-Collaboration-Practice sveazie$ git push --set-upstream origin sep26-steph
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 369 bytes | 369.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/sveazie/GitHub-Collaboration-Practice.git
+   969d885..54951f7  sep26-steph -> sep26-steph
+branch 'sep26-steph' set up to track 'origin/sep26-steph'.
+(base) StephaneazieAir:GitHub-Collaboration-Practice sveazie$ 
